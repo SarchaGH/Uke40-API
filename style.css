@@ -1,0 +1,82 @@
+p {
+   text-align: start;
+}
+
+/*Them Mode*/
+/* Light Mode (Default) */
+body {
+    text-align: center;/*text position*/
+    font-family: Arial, sans-serif;/*FONT STYLE*/
+    background-color:white; /*the nomal background (of the website)*/
+    color: black;/*font colour*/
+
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;/*time*/
+}
+
+/* Space Mode */
+.dark-mode { /*trigger for the Darkmode class */
+    background-image: url("image/spaceBG2.avif");/*BG color for website in darkmode*/
+    color: #e0e0e0; /*the font*/
+}
+
+/* Theme Toggle Button */
+.theme-btn {
+    position: absolute; /*make the buttom can change position*/
+
+    top: 5px;          
+    right: 20px;   
+
+    z-index: 1000; /*on the topp*/ 
+
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;/*change the mounse when pointing on buttom*/
+    border-radius: 20px;
+
+    border: 2px solid #6c757d;
+    background-color: #ffffff;
+    color: #212529;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+/*hover*/
+.theme-btn:hover {
+    background-color: #e2e6ea;
+}
+
+
+
+
+/* Theme Button in Dark Mode */
+.dark-mode .theme-btn {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border-color: #555;
+}
+
+/* Image Styling */
+img {
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Button Style */
+button {
+    padding: 8px 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    background-color: #0d6efd;
+    color: white;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0b5ed7;
+}
