@@ -75,6 +75,10 @@ console.log(error);
 The website includes a Light Mode and Dark Mode button.
  
 The dark mode uses a space background image.
+
+EXP:
+
+![Background in dark mode](./spaceBG2.avif)
  
 ---
  
