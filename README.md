@@ -1,15 +1,103 @@
-
-# UKE40: Website by API. 
-
-## Project overview
-In this project I has made a website that use the text and picture from API. of NASA
-https://science.nasa.gov/wp-json/wp/v2/apod-basic **APOD**(a picture of the day).
-I also reuse a couple feature from the before project in UKE39 (Them changing mode) this project made me understood how to use what is a API. 
-And how we use that In website or show the text from API.
-
-## Feature
-1. **Them changing  button:** this is the buttom that will chage a black ground and font color by cliked the it. this system was used in UKE39,
-   but in this pro ject the dark them was changed to a picture of space.
-
-   **Background EXP:**
-   ![Background in dark mode](./immage/spaceBG2.avif)
+# UKE40: NASA API Website
+ 
+## Project Overview
+ 
+In this project, I created a website that uses NASA APIs to display astronomy pictures and information.
+The website uses NASA APOD (Astronomy Picture of the Day) APIs to show images and descriptions from space.
+ 
+---
+ 
+## Features
+ 
+### 1. NASA APOD API
+ 
+The website uses NASA APIs to retrieve:
+ 
+- Images
+- Titles
+- Descriptions
+- Dates
+ 
+The data is displayed automatically on the webpage.
+ 
+---
+ 
+### 2. NASA APOD Gallery
+ 
+The website displays multiple APOD entries from different dates.
+ 
+Each entry includes:
+ 
+- Title
+- Image
+- Description
+ 
+This creates a small astronomy gallery.
+ 
+---
+ 
+### 3. Error Handling
+ 
+The website checks if the API request is successful before using the data.
+ 
+Example:
+ 
+```javascript
+if (!response.ok) {
+throw new Error("Failed to load data!");
+}
+```
+ 
+If an error occurs:
+ 
+- An error message is displayed
+- An error image is shown
+- The error is logged in the console
+ 
+Example:
+ 
+```javascript
+.catch(error => {
+document.getElementById("text").innerHTML =
+"Failed to load data!";
+ 
+document.getElementById("photo").src =
+"image/error.png";
+ 
+console.log(error);
+});
+```
+ 
+---
+ 
+### 4. Theme Toggle
+ 
+The website includes a Light Mode and Dark Mode button.
+ 
+The dark mode uses a space background image.
+ 
+---
+ 
+## What I Used
+ 
+- HTML
+- CSS
+- JavaScript
+- JSON
+- NASA APIs
+ 
+---
+ 
+## What I Learned
+ 
+Through this project I learned:
+ 
+- What an API is
+- How JSON data is structured
+- How to use fetch()
+- How to display API data
+- How to handle errors
+- How to create a webpage using API data
+ 
+---
+UKE40 - API Project
