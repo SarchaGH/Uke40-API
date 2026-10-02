@@ -52,6 +52,7 @@ If an error occurs:
  
 - An error message is displayed
 - An error image is shown
+
   EXP:
 
 ![Background in dark mode](./error.png)
